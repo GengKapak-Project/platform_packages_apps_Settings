@@ -12,27 +12,32 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<!-- GengKapak version in About phone -->
-<string name="gengkapak_version_title">GengKapak Version</string>
+    <!-- GengKapak version in About phone -->
+    <string name="gengkapak_version_title">GengKapak Version</string>
 
-<!-- Device Model -->
-<string name="device_model">Device Model</string>    
+    <!-- Device Model -->
+    <string name="device_model">Device Model</string>    
 
-<!-- Maintainer -->
-<string name="maintainer">Maintainer</string>
- <string name="maintainer_name" translatable="false">Orang Dalam</string>
+    <!-- Maintainer -->
+    <string name="maintainer">Maintainer</string>
+    <string name="maintainer_name" translatable="false">Orang Dalam</string>
    
-<!-- SELinux Status -->
-<string name="selinux_status">SELinux status</string>
-<string name="selinux_status_disabled">Disabled</string>
-<string name="selinux_status_permissive">Permissive</string>
-<string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
 
-<!-- Notification log -->
-<string name="notification_log_summary">Show notifications history log</string>
- 
-<!-- Settings intelligence suggestions class -->
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Settings intelligence suggestions class -->
     <string name="config_settingsintelligence_suggestions_class" translatable="false">
         com.android.settings.intelligence.suggestions.SuggestionService
     </string>
+    
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+    
 </resources>
