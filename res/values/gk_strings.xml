@@ -15,4 +15,6 @@
 <!-- GengKapak version in About phone -->
 <string name="gengkapak_version_title">GengKapak Version</string>
 
+<!-- Device Model -->
+<string name="device_model">Device Model</string>    
 </resources>
