@@ -29,4 +29,9 @@
 
 <!-- Notification log -->
 <string name="notification_log_summary">Show notifications history log</string>
+ 
+<!-- Settings intelligence suggestions class -->
+    <string name="config_settingsintelligence_suggestions_class" translatable="false">
+        com.android.settings.intelligence.suggestions.SuggestionService
+    </string>
 </resources>
