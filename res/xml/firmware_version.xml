@@ -21,11 +21,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- GengKapak logo -->
+    <!-- GengKapak logo >
     <PreferenceScreen
         android:key="gk_logo"
         android:enabled="false"
-        android:layout="@layout/gk_logo" />
+        android:layout="@layout/gk_logo" /-->
+    <com.android.settings.deviceinfo.firmwareversion.KapakSakti/>
 
     <!-- Android version -->
     <Preference
