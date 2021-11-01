@@ -20,7 +20,7 @@
 
 <!-- Maintainer -->
 <string name="maintainer">Maintainer</string>
-<string name="maintainer_name">Orang Dalam</string>
+ <string name="maintainer_name" translatable="false">Orang Dalam</string>
    
 <!-- SELinux Status -->
 <string name="selinux_status">SELinux status</string>
