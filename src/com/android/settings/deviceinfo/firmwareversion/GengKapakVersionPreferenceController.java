@@ -39,9 +39,12 @@ public class GengKapakVersionPreferenceController extends BasePreferenceControll
 
     @Override
     public CharSequence getSummary() {
-        string buildVersion SystemProperties.get(PROPERTY_GENGKAPAK_VERSION,
+        String buildVersion = SystemProperties.get(PROPERTY_GENGKAPAK_VERSION,
                 mContext.getString(R.string.device_info_default));
         String buildType =  SystemProperties.get(PROPERTY_GENGKAPAK_BUILD_TYPE,
                 this.mContext.getString(R.string.device_info_default));
         return buildVersion + " | " + buildType;
+
     }
+
+}
