@@ -25,6 +25,7 @@ import com.android.settings.core.BasePreferenceController;
 public class GengKapakVersionPreferenceController extends BasePreferenceController {
 
     private static final String PROPERTY_GENGKAPAK_VERSION = "ro.gengkapak.version";
+    private static final String PROPERTY_GENGKAPAK_BUILD_TYPE = "ro.gengkapak.build.type";
 
     public GengKapakVersionPreferenceController(Context context, String key) {
         super(context, key);
@@ -32,12 +33,15 @@ public class GengKapakVersionPreferenceController extends BasePreferenceControll
 
     @Override
     public int getAvailabilityStatus() {
-        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_GENGKAPAK_VERSION))) return AVAILABLE;
+        if (!TextUtils.isEmpty(SystemProperties.get(PROPERTY_GENGKAPAK_VERSION, PROPERTY_GENGKAPAK_BUILD_TYPE))) return AVAILABLE;
         return CONDITIONALLY_UNAVAILABLE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(PROPERTY_GENGKAPAK_VERSION,
-                mContext.getString(R.string.unknown));
+        string buildVersion SystemProperties.get(PROPERTY_GENGKAPAK_VERSION,
+                mContext.getString(R.string.device_info_default));
+        String buildType =  SystemProperties.get(PROPERTY_GENGKAPAK_BUILD_TYPE,
+                this.mContext.getString(R.string.device_info_default));
+        return buildVersion + " | " + buildType;
     }
