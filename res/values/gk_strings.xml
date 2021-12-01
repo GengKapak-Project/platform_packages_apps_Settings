@@ -17,6 +17,10 @@
 
 <!-- Device Model -->
 <string name="device_model">Device Model</string>    
+
+<!-- Maintainer -->
+<string name="maintainer">Maintainer</string>
+<string name="maintainer_name">Orang Dalam</string>
    
 <!-- SELinux Status -->
 <string name="selinux_status">SELinux status</string>
