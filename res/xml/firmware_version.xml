@@ -42,14 +42,14 @@
         android:key="gengkapak_version"
         android:title="@string/gengkapak_version_title"
         android:summary="@string/device_info_default"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.GengKapakVersionPreferenceController"/>
    
     <!-- Device Model-->
     <Preference
         android:key="device_model"
         android:title="@string/device_model"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AxeModelPreferenceController"/>
 
     <!-- Maintainer -->
@@ -57,7 +57,7 @@
         android:key="maintainer"
         android:title="@string/maintainer"
         android:summary="@string/maintainer_name"
-        settings:enableCopying="true" />
+        settings:enableCopying="false" />
 
     <!-- Security patch -->
     <Preference
